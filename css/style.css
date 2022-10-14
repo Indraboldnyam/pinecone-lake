@@ -1,0 +1,191 @@
+/* Web Fonts ----------------------- */
+
+
+/* Base Styles --------------------- */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "California";
+  src: url(/fonts/abolition-regular-webfont.woff);
+}
+
+html {
+  font-size: 1.25em;
+  /* 20px on most screens */
+}
+
+img {
+  width: 100%;
+  /* responsive images */
+}
+
+
+/* Main Styles --------------------- */
+
+
+/* Media Queries ------------------- */
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0px;
+}
+
+#top {
+  background: url(../img/mountains.jpg), rgb(233, 115, 12);
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  margin: 0px;
+  padding-top: 200px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-family: "California";
+  font-size: 70px;
+  letter-spacing: 5px;
+}
+
+header h1::after {
+  content: "\2193";
+  display: block;
+  font-size: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 20px;
+}
+
+header .title {
+  font-size: 25px;
+}
+
+section {
+  text-align: center;
+  width: 70%;
+  margin: 20px auto;
+  border-bottom: 2px dotted gray;
+  /* background-color: aquamarine; */
+}
+
+section .intro {
+  text-align: justify;
+  margin: 70px 150px 30px 150px;
+  color: gray;
+  min-width: 500px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 500px;
+}
+
+.callout {
+  background: linear-gradient(90deg, rgba(236, 158, 112, 0.8) 0%, rgb(230, 123, 23) 25%, rgba(255, 51, 1, 0.973) 100%);
+  opacity: 0.6;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  border-radius: 7px;
+  background-repeat: no-repeat;
+  padding: 5px 20px;
+  border: solid orange 0px;
+  box-shadow: 2px 2px 2px black;
+  margin-bottom: 50px;
+}
+
+#wildlife {
+  background: url(../img/bear.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  color: white;
+  text-align: start;
+  padding: 140px 80px;
+  margin: 50px auto 40px;
+  border-top: solid orange 10px;
+  max-width: 800px;
+  max-height: 400px;
+  min-height: 543px;
+  min-width: 500px;
+  box-shadow: inset 0px 50px 50px black;
+  border-radius: 10px 10px 0px 0px;
+  line-height: 25px;
+}
+
+#wildlife p a {
+  text-decoration: none;
+  color: orange;
+}
+
+#wildlife p {
+  margin: auto;
+}
+
+#wildlife h2 {
+  font-size: 50px;
+  font-family: "California";
+  letter-spacing: 2px;
+}
+
+/* COLUMN STARTS HERE */
+
+.column {
+  display: inline-block;
+  width: 400px;
+  text-align: start;
+  vertical-align: top;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+.column:first-child {
+  /* background-color: #f12711; */
+  margin-right:3% ;
+}
+.column:last-child {
+  /* background-color: #f5af19; */
+  margin-left:3%;
+}
+
+.column p {
+  color: gray;
+}
+
+.column img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.column:hover:after {
+  top: 0;
+  position: absolute;
+  content: "Save";
+  background: linear-gradient(#f12711, #f5af19);
+  color: white;
+  border-radius: 5px;
+  width: 50px;
+  border: solid 1px orange;
+}
+
+.column a {
+  text-decoration: none;
+  color: orange;
+}
+
+.column ol {
+  color: gray;
+}
+
+/* COLUMN ENDS HERE */
+footer {
+  text-align: center;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: orange;
+}
